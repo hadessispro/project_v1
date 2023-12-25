@@ -6,7 +6,7 @@ const {engine} =  require('express-handlebars')
 
 app.use(helmet());
 app.use(compresion())
-app.use(express.json());
+app.use(express.json()); 
 app.use(express.urlencoded({
     extended:true
 }));
