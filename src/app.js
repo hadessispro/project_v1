@@ -20,15 +20,12 @@ app.use(express.urlencoded({
 
 app.engine('handlebars',engine());
 app.set('view engine', 'handlebars');
-app.use('views', path.join(__dirname, 'resources', 'views'));
+app.set('views', path.join(__dirname, 'resources/views'));
+app.use(express.static(path.join(__dirname,'public')))
 // use module
 
 
-
-
 routes(app);
-
-
 
 module.exports = app;
 
