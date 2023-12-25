@@ -1,14 +1,13 @@
-const express=  require('express');
-const {default:helmet} =  require('helmet');
-const compresion = require('compresion');
-const {engine} =  require('express-handlebars')
-//use middlewave
+const app = require('./src/app');
+const process = require('process')
+const port  = 3000;
+const server =app.listen(port,()=>{
+    console.log(`welcome to my server ${port}`);
+})
+// không sửa lại file server này lại file này set cứng
 
-app.use(helmet());
-app.use(compresion())
-app.use(express.json()); 
-app.use(express.urlencoded({
-    extended:true
-}));
-
+// thông báo kết thúc server
+process.on("SIGINT",()=>{
+    server.close(()=>console.log("exit my server express"));
+})
 
