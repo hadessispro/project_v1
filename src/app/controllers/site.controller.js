@@ -1,9 +1,12 @@
 const express= require('express');
 
-class Homecontroller{
-    index(req, res, next){
+class Sitecontroller{
+    home(req, res, next){
         res.render('home');
     }
+    // search(req,res,next){
+    //     res.render('search')
+    // }
 }
 
-module.exports = new Homecontroller
+module.exports = new Sitecontroller
