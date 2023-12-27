@@ -6,6 +6,8 @@ const morgan =  require('morgan');
 const app = express();
 const routes = require('./routes/index');
 const path = require('path');
+const  db = require('./config/db/mongodb.config');
+
 
 //use middlewave
 app.use(morgan('combined'));
@@ -24,8 +26,12 @@ app.set('views', path.join(__dirname, 'resources/views'));
 app.use(express.static(path.join(__dirname,'public')))
 // use module
 
+const  checkover =  require('./helpers/check.connect');
+checkover.checkoverload();
 
 routes(app);
+db.connect()
+
 
 module.exports = app;
 
