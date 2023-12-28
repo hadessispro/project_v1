@@ -2,8 +2,42 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  
 }
 body{
   background-color: black;
+}
+.box_content{
+  display:flex ;
+  height: auto;
+  
+  width: 99%;
+  margin-left: 12px;
+  
+}
+/* css chung sài nhiều lần  */
+.normal{
+  background-color: rgb(25, 26, 26);
+  border-radius: 20px;
+  width: 40rem;
+}
+/*--------------------------  */
+.nav{
+  height: 50rem;
+  width:30%;
+  float: left;
+  
+}
+.nav .nav_redirect{
+  height: 10rem;
+  
+}
+.nav .nav_listalbum{
+  height: 40rem;
+  
+}
+.section{
+  height: 51rem;
+  width: 69%;
+  float: right;
+  margin-left: 12px;
 }
