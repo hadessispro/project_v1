@@ -3,34 +3,35 @@
   margin: 0;
   /* text-decoration: none; */
   list-style-type: none;
+  box-sizing: border-box;
 }
 body{
-  background-color: black;
+  background-color: #111010;
 }
-.box_content{
+/*.box_content{
   display:flex ;
   height: auto;
   
-  width: 99%;
+  width: 100%;
   margin-left: 12px;
   
-}
+} */
 /* css chung sài nhiều lần  */
-.normal{
+/* .normal{
   background-color: rgb(25, 26, 26);
   border-radius: 20px;
   width: 40rem;
 }
 
 /*--------------------------  */
-.nav{
+/*.nav{
   height: 40rem;
-  width:30%;
+  width:25%;
   float: left;
   
 }
 .nav .nav_redirect{
-  height: 10rem;
+  height: 7rem;
   display: flex;
   align-items: center;
   
@@ -41,7 +42,7 @@ body{
 }
 .section{
   height: 51rem;
-  width: 69%;
+  width: 75%;
   float: right;
   margin-left: 12px;
 }
@@ -53,5 +54,71 @@ a{
   
 }
 a:hover{
+  text-decoration:underline;
+} */
+
+.box_content {
+  display: flex;
+  width: 100%;
+  height: 85%;
+}
+
+/* css chung sài nhiều lần  */
+.normal{
+  background-color: rgb(25, 26, 26);
+  border-radius: 10px;
+}
+/* -------------------- */
+
+.nav{
+  float: left;
+  width: 350px;
+  height: 100%;
+  display: flex;
+  align-content: space-between;
+}
+
+.nav_redirect {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.nav_listalbum{
+  width: 100%;
+  height: 79%;
+}
+
+.resizing{
+  width: 0.5%;
+}
+
+.section{
+  float: left;  
+  width: calc(100% - 350px - 1.5%);
+  height: auto;
+}
+
+
+.nav_redirect_item{
+  width: 100%;
+}
+
+.play-music{
+  height: 15%;
+  width: 100%;
+  float: left;
+  background-color: black;
+}
+
+.text_nav_redirect{
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(155, 151, 147);
+  letter-spacing: 3px;
+  
+}
+.text_nav_redirect:hover{
   text-decoration:underline;
 }

@@ -1,8 +1,13 @@
 const express= require('express');
-
+const mydata =  require('../models/mydata');
 class Sitecontroller{
-    home(req, res, next){
-        res.render('home');
+    async home(req, res, next){
+        await mydata.find({})
+            .lean()
+            .then(mydatas =>res.render('home',{
+                mydatas :mydatas
+            }))
+            .catch(next)
     }
     // search(req,res,next){
     //     res.render('search')

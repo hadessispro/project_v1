@@ -1,21 +1,48 @@
-<div class="box_content mt-4">
-  <div class="nav">
+<div class="box_content pt-4">
+  <div class="nav ps-2">
     <aside class="nav_redirect normal">
       {{! nav redirect dùng để chuyển hướng sang home và search }}
-      <div class="px-5">
-        <div>
-          <a href=""><i class="fa-solid fa-house"></i>&nbsp;Trang chủ </a>
+      <div class="px-4 nav_redirect_item">
+        <div class="py-2">
+          <a class="text_nav_redirect" href=""><i
+              class="fa-solid fa-house"
+            ></i>&nbsp;Trang chủ
+          </a>
         </div>
-        <div class="mt-4">
-          <a href=""><i class="fa-solid fa-magnifying-glass"></i>&nbsp;Tìm kiếm</a>
+        <div class="py-2">
+          <a class="text_nav_redirect" href=""><i
+              class="fa-solid fa-magnifying-glass"
+            ></i>&nbsp;Tìm kiếm</a>
         </div>
       </div>
     </aside>
-    <aside class="nav_listalbum normal mt-3">
+
+    <aside class="nav_listalbum normal">
       {{! nav listalbum dùng để render giao diện thói quen sử dụng nhạc người dùng }}
     </aside>
   </div>
+  <div class="resizing"></div>
   <div class="section normal">
+    <div class="mt-4">
+      <div class="row">
 
+        {{#each mydatas}}
+          <div class="col-sm-3">
+            <div class="card" style="width: 14rem;">
+              <img src="{{this.image}}" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p class="card-text">{{this.album}}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+
+      </div>
+    </div>
   </div>
+</div>
+<div class="play-music">
+
 </div>
