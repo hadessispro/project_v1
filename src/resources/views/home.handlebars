@@ -1,48 +1,61 @@
-<div class="box_content pt-4">
-  <div class="nav ps-2">
-    <aside class="nav_redirect normal">
-      {{! nav redirect dùng để chuyển hướng sang home và search }}
-      <div class="px-4 nav_redirect_item">
-        <div class="py-2">
-          <a class="text_nav_redirect" href=""><i
-              class="fa-solid fa-house"
-            ></i>&nbsp;Trang chủ
-          </a>
-        </div>
-        <div class="py-2">
-          <a class="text_nav_redirect" href=""><i
-              class="fa-solid fa-magnifying-glass"
-            ></i>&nbsp;Tìm kiếm</a>
-        </div>
-      </div>
+<div class="box_content">
+  <div class="nav_container ">
+    <aside class="nav_redirect normal ">
+        <ul class="nav_redirect_item">
+          <li><a class="text_nav_redirect" href=""><i class="fa-solid fa-house"></i>&nbsp;Trang chủ</li>
+          <li><a class="text_nav_redirect" href=""><i class="fa-solid fa-magnifying-glass"></i>&nbsp;Tìm kiếm</a></li>
+        </ul>
     </aside>
-
     <aside class="nav_listalbum normal">
-      {{! nav listalbum dùng để render giao diện thói quen sử dụng nhạc người dùng }}
+
     </aside>
   </div>
-  <div class="resizing"></div>
-  <div class="section normal">
-    <div class="mt-4">
+  <div class="section normal ">
+    <div class="container">
       <div class="row">
-
-        {{#each mydatas}}
-          <div class="col-sm-3">
-            <div class="card" style="width: 14rem;">
-              <img src="{{this.image}}" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">{{this.name}}</h5>
-                <p class="card-text">{{this.album}}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <div class="col">
+            <div><p>User</p></div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col col-12">
+          <div class="row">
+            <div class="col col-10 col-sm-10 col-lg-11 col-xl-11">
+              <div><p>Recently Played</p></div>
+            </div>
+            <div class="col col-2 col-sm-2 col-lg-1 col-xl-1">
+              <div><p>Show All</p></div>
             </div>
           </div>
-        {{/each}}
-
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-6 col-md-4 col-lg-3 col-xl bg-primary">
+          <div class="">
+            <div><p>Music</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-6 col-md-4 col-lg-3 col-xl bg-primary">
+          <div class="">
+            <div><p>Music</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-6 col-md-4 col-lg-3 col-xl bg-primary">
+          <div class="">
+            <div><p>Music</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-6 col-md-4 col-lg-3 col-xl bg-primary">
+          <div class="">
+            <div><p>Music</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-6 col-md-4 col-lg-3 col-xl bg-primary">
+          <div class="">
+            <div><p>Music</p></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="play-music">
-
 </div>

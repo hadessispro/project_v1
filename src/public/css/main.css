@@ -1,12 +1,13 @@
 *{
   padding: 0;
   margin: 0;
-  font-weight:500;
+  /* text-decoration: none; */
   list-style-type: none;
   box-sizing: border-box;
 }
+
 body{
-  background-color: #111010;
+    background-color: #111010;
 }
 /*.box_content{
   display:flex ;
@@ -58,9 +59,9 @@ a:hover{
 } */
 
 .box_content {
+  height: 100%;
   display: flex;
-  width: 100%;
-  height: 85%;
+  padding: 8px 0 0;
 }
 
 /* css chung sài nhiều lần  */
@@ -70,24 +71,29 @@ a:hover{
 }
 /* -------------------- */
 
-.nav{
-  float: left;
-  width: 350px;
-  height: 100%;
+.nav_container{
+  width: 20%;
+  min-width: 180px;
+  height: 90%;
+  margin: 0 4px;
   display: flex;
-  align-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: content-box;
 }
 
 .nav_redirect {
-  width: 100%;
-  height: 20%;
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 4px;
 }
 
 .nav_listalbum{
   width: 100%;
-  height: 79%;
+  height: 80%;
+  margin-top: 4px;
 }
 
 .resizing{
@@ -95,14 +101,18 @@ a:hover{
 }
 
 .section{
-  float: left;  
-  width: calc(100% - 350px - 1.5%);
-  height: auto;
+  width: 80%;
+  margin: 0 4px;
+  height: 90%;
 }
 
 
 .nav_redirect_item{
   width: 100%;
+}
+
+.nav_redirect_item>li{
+  padding: 4px;
 }
 
 .play-music{
@@ -124,9 +134,29 @@ a:hover{
 }
 
 
+p{
+  color: white;
+}
 
 
-/* login and signup */
+
+
+
+/* login and signup,resey */
+
+.content_reset{
+  height: auto;
+  width: 35%;
+}
+
+.content_reset h1{
+  font-size: 40px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+
+
 .login_signup{
   height: auto;
   display: flex;
