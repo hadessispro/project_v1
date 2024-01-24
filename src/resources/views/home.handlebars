@@ -1,48 +1,72 @@
-<div class="box_content pt-4">
-  <div class="nav ps-2">
-    <aside class="nav_redirect normal">
-      {{! nav redirect dùng để chuyển hướng sang home và search }}
-      <div class="px-4 nav_redirect_item">
-        <div class="py-2">
-          <a class="text_nav_redirect" href=""><i
-              class="fa-solid fa-house"
-            ></i>&nbsp;Trang chủ
-          </a>
-        </div>
-        <div class="py-2">
-          <a class="text_nav_redirect" href=""><i
-              class="fa-solid fa-magnifying-glass"
-            ></i>&nbsp;Tìm kiếm</a>
-        </div>
-      </div>
-    </aside>
-
-    <aside class="nav_listalbum normal">
-      {{! nav listalbum dùng để render giao diện thói quen sử dụng nhạc người dùng }}
-    </aside>
+<div class="box_content ">
+  <div class="row">
+    <div class="col col-9 col-sm-9 col-lg-10 col-xl-10 col-xxl-11">
+      <div><p>Recently Played</p></div>
+    </div>
+    <div class="col col-3 col-sm-3 col-lg-2 col-xl-2 col-xxl-1 text-end">
+      <div><p>Show All</p></div>
+    </div>
   </div>
-  <div class="resizing"></div>
-  <div class="section normal">
-    <div class="mt-4">
-      <div class="row">
-
-        {{#each mydatas}}
-          <div class="col-sm-3">
-            <div class="card" style="width: 14rem;">
-              <img src="{{this.image}}" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">{{this.name}}</h5>
-                <p class="card-text">{{this.album}}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        {{/each}}
-
+  <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-md-2 row-cols-2 gy-3">
+    <div class="col">
+      <div class="test">
+        <div><p>Music</p></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="test">
+        <div><p>Music</p></div>
+      </div>
+    </div>
+      <div class="col d-none d-lg-block">
+      <div class="test">
+        <div><p>Music</p></div>
+      </div>
+    </div>
+    <div class="col d-none d-xl-block">
+      <div class="test">
+        <div><p>Music</p></div>
+      </div>
+    </div>
+    <div class="col d-none d-xxl-block">
+      <div class="test">
+        <div><p>Music</p></div>
       </div>
     </div>
   </div>
-</div>
-<div class="play-music">
-
+  <div class="row">
+    <div class="col col-9 col-sm-9 col-lg-10 col-xl-10 col-xxl-11">
+      <div><p>Recently Played</p></div>
+    </div>
+    <div class="col col-3 col-sm-3 col-lg-2 col-xl-2 col-xxl-1 text-end">
+      <div><p>Show All</p></div>
+    </div>
+  </div>
+  <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-md-2 row-cols-2 gy-3">
+    <div class="col">
+      <div class="test">
+        <div><p>Music</p></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="test">
+        <div><p>Music</p></div>
+      </div>
+    </div>
+      <div class="col d-none d-lg-block">
+      <div class="test">
+        <div><p>Music</p></div>
+      </div>
+    </div>
+    <div class="col d-none d-xl-block">
+      <div class="test">
+        <div><p>Music</p></div>
+      </div>
+    </div>
+    <div class="col d-none d-xxl-block">
+      <div class="test">
+        <div><p>Music</p></div>
+      </div>
+    </div>
+  </div>
 </div>
